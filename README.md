@@ -132,7 +132,8 @@ the `a` tags with our image tag.
 </a>
 ```
 
-Here's how this `a` tag with an `img` inside looks when rendered in the browser (try clicking it):
+Here's how this `a` tag with an `img` inside looks when rendered in the browser
+(try clicking it):
 
 <a href="http://example.com/">
   <img
@@ -160,6 +161,9 @@ webpage. We can then target an element that we identified or classified earlier.
 <p id="tips">Useful Tips Section</p>
 <a href="#tips">Jump to the Useful Tips Section</a>
 ```
+
+<p id="tips">Useful Tips Section</p>
+<a href="#tips">Jump to the Useful Tips Section</a>
 
 When considering what location links point to, you will choose between relative
 or absolute links. A relative link directs to content within the same website.
