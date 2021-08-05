@@ -27,6 +27,13 @@ the HTML unordered list, represented by the `ul` tag.
 </ul>
 ```
 
+Here's how this HTML looks when rendered in the browser:
+
+<ul>
+  <li>One item</li>
+  <li>Another item</li>
+</ul>
+
 If it's important to distinguish a particular order of the items (as for a
 recipe or ranking), we use an ordered list, or the `ol` tag.
 
@@ -40,6 +47,13 @@ recipe or ranking), we use an ordered list, or the `ol` tag.
 Notice the nesting of our items within the lists. Each `li` is a list item
 contained in the larger `ul` or `ol` container.
 
+Here's how this HTML looks when rendered in the browser:
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+</ol>
+
 Another type of list we can use is a definition list, which defines specific
 types of items.
 
@@ -50,19 +64,36 @@ types of items.
 </dl>
 ```
 
+Here's how this HTML looks when rendered in the browser:
+
+<dl>
+  <dt>First term</dt>
+  <dd>Term definition</dd>
+</dl>
+
 ### Identify Images
 
 To include an image in our page, we use an `img` tag.
 
 ```html
 <img
-  src="myimage.jpg"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
   alt="Alternative Text"
   title="Display Title"
-  width="800"
-  height="600"
+  width="400"
+  height="400"
 />
 ```
+
+Here's how this `img` tag looks when rendered in the browser:
+
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+  alt="Alternative Text"
+  title="Display Title"
+  width="400"
+  height="400"
+/>
 
 There are two notable things about the `img` tag: The first is that it does not
 have a closing tag. The image tag closes itself. Secondly, it handles a lot of
@@ -85,20 +116,42 @@ Beginning with a standard text hyperlink, we can wrap other elements inside of t
 <a href="http://example.com/">This is a link</a>
 ```
 
+<a href="http://example.com/">This is a link rendered in the browser</a>
+
 What if we want to link an image instead of text? We can replace the text within
 the `a` tags with our image tag.
 
 ```html
 <a href="http://example.com/">
-  <img src="myimage.jpg" alt="Alternative Text" />
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+    alt="Alternative Text"
+    width="400"
+    height="400"
+  />
 </a>
 ```
+
+Here's how this `a` tag with an `img` inside looks when rendered in the browser (try clicking it):
+
+<a href="http://example.com/">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+    alt="Alternative Text"
+    width="400"
+    height="400"
+  />
+</a>
 
 What about a link that will direct to an email address?
 
 ```html
 <a href="mailto:webmaster@example.com">Send an email</a>
 ```
+
+Here's how this `a` tag with an email looks like:
+
+<a href="mailto:webmaster@example.com">Email link rendered in the browser</a>
 
 Sometimes we might want to link to a specific location on the same
 webpage. We can then target an element that we identified or classified earlier.
