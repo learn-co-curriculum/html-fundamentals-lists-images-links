@@ -188,8 +188,8 @@ render correctly in one browser, but not in another.
 
 It's easy to forget a closing HTML tag or miss a piece of punctuation when
 writing HTML. Fortunately, we have a tool that will check our markup for us and
-point out any errors. To validate our HTML, we can use the [W3 HTML validator]
-(http://validator.w3.org).
+point out any errors. To validate our HTML, we can use the
+[W3 HTML validator](http://validator.w3.org).
 
 ## Conclusion
 
